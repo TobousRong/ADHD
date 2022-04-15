@@ -36,12 +36,12 @@ for mode=2:N
          eval(['clear',' H',num2str(mode-1),'_',num2str(j),'']);
     end
      Z=[];
-    if (Clus_num(end)==N)
+    %if (Clus_num(end)==N)
         for j=1:2*Clus_num(mode)
             Z=[Z;eval(['H',num2str(mode),'_',num2str(j)])];
         end
-        break;
-    end
+       % break;
+    %end
 end
 Clus_num(1)=[];
 Clus_num=[Clus_num/N,ones(1,N-length(Clus_num))];
